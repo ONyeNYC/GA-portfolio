@@ -1,0 +1,205 @@
+body {
+  box-sizing: border-box;
+  background-color: #000;
+  height: 100vh;
+}
+.container {
+  width: 80%;
+  margin: 10px auto;
+  display: grid;
+  grid-template-rows: 250px 260px 200px 100px;
+  grid-template-columns: 22% 78%;
+  gap: 5px;
+  grid-template-areas:
+    "logo main"
+    "side main"
+    "social main"
+    "foot foot";
+
+  background-color: #333; /* Gray background */
+  color: #fff; /* White text */
+  border: 1px solid gray; /* Black border */
+  border-radius: 10px;
+  padding: 20px; /* Padding for content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.grid-pf {
+  background-color: #3a3a3c;
+  padding: 2px;
+  color: #fff;
+  font-size: 30px;
+  font-family: sans-serif;
+}
+
+.grid-pf--logo {
+  background-color: #000;
+  border-bottom: 2px solid gray;
+}
+
+.grid-pf--logo h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: verdana;
+  font-size: 3em;
+  font-weight: 700;
+  color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  /* margin-bottom: 90px; */
+  text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191,
+    1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191,
+    1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191,
+    1px 10px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4),
+    1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2),
+    1px 30px 60px rgba(16, 16, 16, 0.4);
+}
+.grid-pf--logo h2 {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+}
+
+.grid-pf--logo p {
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  /* margin-top: 30px auto; */
+  margin: 0;
+  padding: 0;
+  font-style: italic;
+}
+
+.grid-pf--logo {
+  grid-area: logo;
+}
+
+/* .grid-pf--socials {
+} */
+
+.grid-pf--main {
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: left;
+  grid-area: main;
+  font-family: "Courier New", Courier, monospace;
+  border-right: 1px solid #fff;
+  border-left: 1px solid #fff;
+}
+
+.down {
+  margin-top: 182px;
+}
+
+.grid-pf--main h3 {
+  color: #fff;
+  font-size: 47px;
+  margin-left: 0px;
+  line-height: 0.3;
+  white-space: nowrap;
+}
+
+.grid-pf--main p {
+  font-size: 30px;
+}
+
+.grid-pf--aside {
+  grid-area: side;
+}
+
+.grid-pf--aside ul {
+  list-style-type: none;
+  margin-top: 0;
+  padding: 0;
+}
+
+.grid-pf--aside a {
+  background-color: #302e2e;
+  border: none;
+  border-top: 2px solid #8d7f7f;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  font-size: 20px;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-pf--aside a:hover {
+  background-color: #666;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.grid-pf--aside a:active {
+  background-color: #3a3a3c;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.grid-pf--socials img {
+  width: 20%;
+  height: 20%;
+  margin-right: 15px;
+}
+
+.grid-pf--footer {
+  grid-area: foot;
+  border-top: 1px solid #fff;
+}
+
+.grid-pf--footer p {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 35px;
+  margin-bottom: 0px;
+}
+
+.grid-pf--socials {
+  grid-area: social;
+}
+
+.grid-pf--socials ul {
+  list-style: none;
+}
+
+.grid-pf--socials ul li a {
+  color: #fff; /* White text color */
+  font-style: italic; /* Italic font style */
+  display: block; /* Inline-block display */
+  text-decoration: none; /* Remove underline */
+  padding: 0px; /* Padding around the link */
+  border-radius: 5px; /* Rounded corners */
+  margin-top: 0;
+  transition: background-color 0.3s ease; /* Transition for hover effect */
+}
+
+/* Hover effect */
+.grid-pf--socials ul li a:hover {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.2
+  ); /* Slight white background on hover */
+  color: #fff; /* Text color remains white */
+}
+
+/* Active link */
+.grid-pf--socials ul li a:active {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.4
+  ); /* Darker background when clicked */
+}
+
+/* Focused link */
+.grid-pf--socials ul li a:focus {
+  outline: none; /* Remove browser default outline */
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); /* Add a white glow */
+}
+
+/*END*/
